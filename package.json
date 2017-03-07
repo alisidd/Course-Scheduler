@@ -39,13 +39,6 @@
     "cordova-plugin-splashscreen",
     "ionic-plugin-keyboard"
   ],
-  "cordovaPlatforms": [
-    "ios",
-    {
-      "platform": "ios",
-      "version": "",
-      "locator": "ios"
-    }
-  ],
+  "cordovaPlatforms": [],
   "description": "myApp: An Ionic project"
 }
