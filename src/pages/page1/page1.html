@@ -1,18 +1,18 @@
 <ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+        <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
         <div padding>
-          <ion-segment [(ngModel)]="term">
-            <ion-segment-button value="spring">
-              Spring
-            </ion-segment-button>
-            <ion-segment-button value="fall">
-              Fall
-            </ion-segment-button>
-          </ion-segment>
+            <ion-segment [(ngModel)]="term">
+                <ion-segment-button value="fall">
+                    Fall
+                </ion-segment-button>
+                <ion-segment-button value="spring">
+                    Spring
+                </ion-segment-button>
+            </ion-segment>
         </div>
     </ion-title>
   </ion-navbar>
@@ -21,10 +21,15 @@
 <ion-content padding>
     <div [ngSwitch]="term">
         <ion-list *ngSwitchCase="'spring'">
-          <ion-item>
-              
-          </ion-item>
-          ...
+            <ion-item>
+                <ion-tabs>
+                  <ion-tab [root]="M"></ion-tab>
+                  <ion-tab [root]="T"></ion-tab>
+                  <ion-tab [root]="W"></ion-tab>
+                  <ion-tab [root]="R"></ion-tab>
+                  <ion-tab [root]="F"></ion-tab>
+                </ion-tabs>
+            </ion-item>
         </ion-list>
     </div>
 </ion-content>
