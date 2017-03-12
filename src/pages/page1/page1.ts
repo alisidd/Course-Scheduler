@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
@@ -7,9 +7,9 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'page1.html'
 })
 export class Page1 {
-
+  @Input() term;
   constructor(public navCtrl: NavController) {
-
+    this.term = "fall" // Set default
   }
 
 }
