@@ -22,12 +22,12 @@
 <ion-content padding>
     <ion-grid>
         <div class="small">Auto</div>
-        <button ion-row no-padding class="find" icon-right ion-button color="dark" full clear>
+        <button ion-row no-padding class="find" icon-right ion-button color="dark" full clear (click)="listCourses('find')">
             <ion-col no-padding align="left">Find Courses</ion-col>
             <ion-icon ion-col align="right" class="arrow" name="arrow-forward"></ion-icon>
         </button>
         <div class="small" padding-bottom>Finds courses you can take and fit into your schedule.</div>
-        <button ion-row no-padding class="find" icon-right ion-button color="dark" full clear>
+        <button ion-row no-padding class="find" icon-right ion-button color="dark" full clear (click)="listCourses('recommend')">
             <ion-col no-padding align="left">Recommend Courses</ion-col>
             <ion-icon ion-col align="right" class="arrow" name="arrow-forward"></ion-icon>
         </button>
@@ -49,7 +49,7 @@
         </ion-list>
         <div class="small" padding-top>Current Registration</div>
         <ion-list>
-            <button ion-button icon-right no-padding color="dark" full clear *ngFor="let class of classes">
+            <button ion-button icon-right no-padding color="dark" full clear *ngFor="let class of classes" (click)="classInfo(class)">
                 <ion-item ion-row no-padding>
                     <ion-col class="course" ion-col no-padding align="left">{{class.title}}</ion-col>
                     <ion-icon ion-col no-padding item-right align="right" class="arrow" name="arrow-forward"></ion-icon>
@@ -58,7 +58,7 @@
         </ion-list>
         <div class="small" padding-top>Waitlist</div>
         <ion-list>
-            <button ion-button icon-right no-padding color="dark" full clear *ngFor="let class of waiting">
+            <button ion-button icon-right no-padding color="dark" full clear *ngFor="let class of waiting" (click)="classInfo(class)">
                 <ion-item ion-row no-padding>
                     <ion-col class="course" no-padding align="left">{{class.title}}</ion-col>
                     <ion-badge ion-col col-2 item-right align="right" color="danger">{{class.position}}</ion-badge>
