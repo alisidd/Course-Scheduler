@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 
-import { NavController, ModalController, ToastController } from 'ionic-angular';
+import { NavController, ModalController, ToastController, NavParams, ViewController } from 'ionic-angular';
 import { Info } from '../info/info';
 import { Register } from '../Register/Register';
 
@@ -35,10 +35,7 @@ searchFaculty() {
 		}).present();
 	}
 	/*
-this.navCtrl.push(Register, {
-type: "search",
-faculty: this.faculty
-}); */
+	this.navCtrl.push(Register); */
 }
 
 // Accepts only CRN 15819 and labels it as CSC 999

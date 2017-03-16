@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 
-import { NavController, ModalController, ToastController } from 'ionic-angular';
+import { NavController, ModalController, ToastController, Nav Params, ViewController } from 'ionic-angular';
 //import { Info } from '../info/info';
 import { classinfo } from '../classinfo/classinfo';
 
 @Component({
   selector: 'page-register',
-  templateUrl: 'register.html'
+  templateUrl: 'Register.html'
 })
 
 export class Register {
