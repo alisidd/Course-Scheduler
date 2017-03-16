@@ -1,0 +1,39 @@
+<ion-header>
+	<!--
+<ion-navbar>
+<button ion-button menuToggle>
+<ion-icon name="menu"></ion-icon>
+</button>
+<ion-title>Login</ion-title>
+</ion-navbar>-->
+</ion-header>
+
+<ion-content>
+	<img src="http://www.uvic.ca/assets2012/images/photos/billboards-34/2016/home-uvic-edge-2016.jpg" style="width: 100%; height: auto;">
+	<div padding>
+		<h2>CourseScheduler</h2>
+		
+		<p>
+		Welcome to coursescheduler.com<br>
+		<br>
+		This is a site for helping students at UVic plan out course timetables.<br>
+		<br>
+		Course registration is rarely easy, and the most difficult part is often finding course sections that don't overlap. Every term, many students find themselves manually creating visual representations of their timetable in excel or even on paper, trying to find a schedule that will work.<br>
+		</p>
+		
+		<h2>Login</h2>
+		
+		<ion-item class="drop" ion-row no-padding>
+			<ion-input type="text" ion-col placeholder="Username" [(ngModel)]="username"></ion-input>
+			
+		</ion-item>
+		<ion-item class="drop" ion-row no-padding>
+			<ion-input type="password" ion-col placeholder="Password" [(ngModel)]="password"></ion-input>
+		</ion-item>
+
+		<button ion-button (click)="loginUser()">   Login   </button>
+
+		<p>
+		CourseScheduler will save you time and stress by making the timetabling part of course registration ridiculously easy, the way it should be.</p>
+	</div>
+</ion-content>
