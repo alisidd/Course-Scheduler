@@ -3,6 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Add } from '../pages/add/add';
+import { Login } from '../pages/login/login';
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 
@@ -13,7 +14,7 @@ import { Page2 } from '../pages/page2/page2';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Add;
+  rootPage: any = Login;
 
   pages: Array<{title: string, component: any}>;
 
@@ -25,6 +26,8 @@ export class MyApp {
       { title: 'Add Course', component: Add },
       { title: 'CourseSpaces', component: Page1 },
       { title: 'View Grades', component: Page2 },
+	  
+	  { title: 'Signout', component: Login },
     ];
 
   }
