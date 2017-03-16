@@ -3,6 +3,7 @@ import { Http } from '@angular/http';
 
 import { NavController, ModalController, ToastController } from 'ionic-angular';
 import { Info } from '../info/info';
+import { Register } from '../Register/Register';
 
 @Component({
 	selector: 'page-add',
@@ -34,7 +35,7 @@ searchFaculty() {
 		}).present();
 	}
 	/*
-this.navCtrl.push(courseList, {
+this.navCtrl.push(Register, {
 type: "search",
 faculty: this.faculty
 }); */

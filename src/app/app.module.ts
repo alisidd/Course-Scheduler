@@ -7,6 +7,7 @@ import { Info } from '../pages/info/info';
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 import { Login } from '../pages/login/login';
+import { Register } from '../pages/Register/Register';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { Login } from '../pages/login/login';
     Info,
 	Login,
     Page1,
-    Page2
+    Page2,
+	Register
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -28,7 +30,8 @@ import { Login } from '../pages/login/login';
     Info,
 	Login,
     Page1,
-    Page2
+    Page2,
+	Register
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
