@@ -33,7 +33,7 @@ export class Register {
   }
   
   itemClicked(event, item) {
-    this.navCtrl.push(Page3, {
+    this.navCtrl.push(classinfo, {
      item: item
     })
   }

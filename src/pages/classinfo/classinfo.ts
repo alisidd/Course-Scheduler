@@ -33,11 +33,4 @@ export class classinfo {
       });
     }
   }
-
-	 itemTapped(event, item) {
-		// That's right, we're pushing to ourselves!
-		this.navCtrl.push(Page3, {
-		  item: item
-		});
-	}
 }
