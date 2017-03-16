@@ -7,18 +7,13 @@
                 <ion-icon name="menu"></ion-icon>
                 </button>
             </ion-col>
-			<ion-col no-padding>
-				<button clear ion-button align="left">
-					Cancel 
-                </button>
-            </ion-col>
             <ion-col>
                 <ion-title align="center" class="title">
                 Add Courses
                 </ion-title>
             </ion-col>
             <ion-col no-padding>
-				<button clear ion-button align="right">
+				<button clear ion-button align="right" (click)="register()">
 					Register
                 </button>
             </ion-col>
@@ -33,7 +28,7 @@
 			<div *ngFor="let class of classes">
 				<ion-item no-padding>
 					<div ion-row>
-					<button ion-button ion-col col-1 icon-right no-padding small color="blue" full clear (tap)="class.icon = !class.icon">
+					<button ion-button icon-right no-padding small color="blue" full clear (tap)="class.icon = !class.icon" style="width: 50px;">
 
 						<div class="icon_color" item-left *ngIf="class.icon">
 							<ion-icon  no-padding item-right class="arrow" name="checkmark"></ion-icon>
@@ -44,7 +39,7 @@
 						{{class.title}}
 					</div>
 
-					<button ion-button ion-col col-3 icon-right no-padding small color="blue" full clear (click)="itemClicked($event, item);">
+					<button ion-button icon-right no-padding small color="blue" full clear (click)="itemClicked($event, class);" style="width: 30px; margin-right: 10px; margin-left:auto;">
 
 						<div class="icon_color" item-left>
 							<ion-icon no-padding item-right class="arrow" name="information-circle"></ion-icon>

@@ -31,7 +31,7 @@ export class Info {
       this.allCourses = res.json()
       this.course = this.allCourses.find( value => value.title === navParams.get('title'));
       let start = numTimeToString(this.course.times.start);
-      let end = numTimeToString(this.course.times.end);
+      let end = numTimeToString(this.course.times.start);
       this.timeString = [
         "Every Week",
         `${start} - ${end}`,
@@ -48,6 +48,7 @@ export class Info {
 
   
 }
+
 
 function numTimeToString(time : number) : string {
   let formatted: string;
