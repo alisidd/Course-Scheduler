@@ -34,8 +34,8 @@ searchFaculty() {
 			duration: 1500
 		}).present();
 	}
-	/*
-	this.navCtrl.push(Register); */
+	
+	this.navCtrl.push(Register); 
 }
 
 // Accepts only CRN 15819 and labels it as CSC 999

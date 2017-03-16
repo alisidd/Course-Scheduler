@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 
-import { NavController, ModalController, ToastController, Nav Params, ViewController } from 'ionic-angular';
+import { NavController, ModalController, ToastController, NavParams, ViewController } from 'ionic-angular';
 //import { Info } from '../info/info';
 import { classinfo } from '../classinfo/classinfo';
 
