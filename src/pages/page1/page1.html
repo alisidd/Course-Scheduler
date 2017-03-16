@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar class="dark">
     <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
     </button>
@@ -19,17 +19,159 @@
 </ion-header>
 
 <ion-content padding>
+
     <div [ngSwitch]="term">
-        <ion-list *ngSwitchCase="'spring'">
-            <ion-item>
-                <ion-tabs>
-                  <ion-tab [root]="M"></ion-tab>
-                  <ion-tab [root]="T"></ion-tab>
-                  <ion-tab [root]="W"></ion-tab>
-                  <ion-tab [root]="R"></ion-tab>
-                  <ion-tab [root]="F"></ion-tab>
-                </ion-tabs>
-            </ion-item>
+
+        <ion-list *ngSwitchCase="'fall'" class="dark">
+            <ion-segment [(ngModel)]="fall_term" color="dark">
+                <ion-segment-button value="M">
+                    M
+                </ion-segment-button>
+                <ion-segment-button value="T">
+                    T
+                </ion-segment-button>
+                <ion-segment-button value="W">
+                    W
+                </ion-segment-button>
+                <ion-segment-button value="R">
+                    R
+                </ion-segment-button>
+                <ion-segment-button value="F">
+                    F
+                </ion-segment-button>
+            </ion-segment>
         </ion-list>
+
+        <ion-list *ngSwitchCase="'spring'">
+            <ion-segment [(ngModel)]="spring_term" color="dark">
+                <ion-segment-button value="M">
+                    M
+                </ion-segment-button>
+                <ion-segment-button value="T">
+                    T
+                </ion-segment-button>
+                <ion-segment-button value="W">
+                    W
+                </ion-segment-button>
+                <ion-segment-button value="R">
+                    R
+                </ion-segment-button>
+                <ion-segment-button value="F">
+                    F
+                </ion-segment-button>
+            </ion-segment>
+        </ion-list>
+
     </div>
+
+    <div [ngSwitch]="fall_term">
+
+        <ion-list *ngSwitchCase="'M'">
+            <button ion-item *ngFor="let item of fall_m" (click)="itemTapped($event, item)">
+                <ion-thumbnail item-left>
+                    <img style="width: 30px;height:30px;margin-top:10px;" src="images/red-box.png">
+                </ion-thumbnail>
+                <h4> {{item.course_name}} </h4>
+                <p>  {{item.time}}  </p>
+            </button>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'T'">
+            <button ion-item *ngFor="let item of fall_t" (click)="itemTapped($event, item)">
+                <ion-thumbnail item-left>
+                    <img style="width: 30px;height:30px;margin-top:10px;" src="images/red-box.png">
+                </ion-thumbnail>
+                <h4> {{item.course_name}} </h4>
+                <p>  {{item.time}}  </p>
+            </button>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'W'">
+            <button ion-item *ngFor="let item of fall_w" (click)="itemTapped($event, item)">
+                <ion-thumbnail item-left>
+                    <img style="width: 30px;height:30px;margin-top:10px;" src="images/red-box.png">
+                </ion-thumbnail>
+                <h4> {{item.course_name}} </h4>
+                <p>  {{item.time}}  </p>
+            </button>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'R'">
+            <button ion-item *ngFor="let item of fall_r" (click)="itemTapped($event, item)">
+                <ion-thumbnail item-left>
+                    <img style="width: 30px;height:30px;margin-top:10px;" src="images/red-box.png">
+                </ion-thumbnail>
+                <h4> {{item.course_name}} </h4>
+                <p>  {{item.time}}  </p>
+            </button>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'F'">
+            <button ion-item *ngFor="let item of fall_f" (click)="itemTapped($event, item)">
+                <ion-thumbnail item-left>
+                    <img style="width: 30px;height:30px;margin-top:10px;" src="images/red-box.png">
+                </ion-thumbnail>
+                <h4> {{item.course_name}} </h4>
+                <p>  {{item.time}}  </p>
+            </button>
+        </ion-list>
+
+    </div>
+
+    <div [ngSwitch]="spring_term">
+
+        <ion-list *ngSwitchCase="'M'">
+            <button ion-item *ngFor="let item of spring_m" (click)="itemTapped($event, item)">
+                <ion-thumbnail item-left>
+                    <img style="width: 30px;height:30px;margin-top:10px;" src="images/red-box.png">
+                </ion-thumbnail>
+                <h4> {{item.course_name}} </h4>
+                <p>  {{item.time}}  </p>
+            </button>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'T'">
+            <button ion-item *ngFor="let item of spring_t" (click)="itemTapped($event, item)">
+                <ion-thumbnail item-left>
+                    <img style="width: 30px;height:30px;margin-top:10px;" src="images/red-box.png">
+                </ion-thumbnail>
+                <h4> {{item.course_name}} </h4>
+                <p>  {{item.time}}  </p>
+            </button>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'W'">
+            <button ion-item *ngFor="let item of spring_w" (click)="itemTapped($event, item)">
+                <ion-thumbnail item-left>
+                    <img style="width: 30px;height:30px;margin-top:10px;" src="images/red-box.png">
+                </ion-thumbnail>
+                <h4> {{item.course_name}} </h4>
+                <p>  {{item.time}}  </p>
+            </button>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'R'">
+            <button ion-item *ngFor="let item of spring_r" (click)="itemTapped($event, item)">
+                <ion-thumbnail item-left>
+                    <img style="width: 30px;height:30px;margin-top:10px;" src="images/red-box.png">
+                </ion-thumbnail>
+                <h4> {{item.course_name}} </h4>
+                <p>  {{item.time}}  </p>
+            </button>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'F'">
+            <button ion-item *ngFor="let item of spring_f" (click)="itemTapped($event, item)">
+                <ion-thumbnail item-left>
+                    <img style="width: 30px;height:30px;margin-top:10px;" src="images/red-box.png">
+                </ion-thumbnail>
+                <h4> {{item.course_name}} </h4>
+                <p>  {{item.time}}  </p>
+            </button>
+        </ion-list>
+
+    </div>
+
+
+
 </ion-content>
