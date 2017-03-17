@@ -4,7 +4,7 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Add } from '../pages/add/add';
 import { Login } from '../pages/login/login';
-import { schedule } from '../pages/schedule/schedule';
+import { Schedule } from '../pages/schedule/schedule';
 import { Grade } from '../pages/Grade/Grade';
 
 
@@ -24,10 +24,9 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Add Course', component: Add },
-      { title: 'CourseSpaces', component: schedule },
+      { title: 'CourseSpaces', component: Schedule },
       { title: 'View Grades', component: Grade },
-	  
-	  { title: 'Signout', component: Login },
+	    { title: 'Signout', component: Login },
     ];
 
   }

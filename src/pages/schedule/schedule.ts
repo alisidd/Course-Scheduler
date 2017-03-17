@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
-import { classinfo } from '../classinfo/classinfo';
+import { Classinfo } from '../classinfo/classinfo';
 
 @Component({
   selector: 'page-schedule',
   templateUrl: 'schedule.html'
 })
-export class schedule {
+export class Schedule {
     fall_m: Array<{course_name: string, time: string}>;
     fall_t: Array<{course_name: string, time: string}>;
     fall_w: Array<{course_name: string, time: string}>;

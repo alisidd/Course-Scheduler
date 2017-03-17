@@ -4,13 +4,13 @@ import { Http } from '@angular/http';
 import { NavController, ModalController, ToastController, NavParams, ViewController } from 'ionic-angular';
 import { Info } from '../info/info';
 import { Register } from '../Register/Register';
-import { schedule } from '../schedule/schedule';
+import { Schedule } from '../schedule/schedule';
 
 @Component({
   selector: 'page-classinfo',
   templateUrl: 'classinfo.html'
 })
-export class classinfo {
+export class Classinfo {
   selectedItem: any;
   public icon: boolean;
  // items: Array<{title: string, note: string, icon: string}>;
