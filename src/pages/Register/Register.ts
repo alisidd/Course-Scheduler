@@ -21,13 +21,13 @@ export class Register {
     let type = navParams.get('type');
     let list = [];
     if (type === "find") {
-      list = ["SENG 310", "CSC 361", "MATH 202", "CSC 320"]
+      list = ["POLI 103", "EOS 110", "MATH 202"]
     } else if (type === "recommend") {
-      list = ["SENG 310", "CSC 361", "MATH 202", "CSC 320"]
+      list = ["SENG 310", "GRS 204", "ECON 104"]
     } else if (type === "csc") {
-      list = ["SENG 310", "CSC 361", "MATH 202", "CSC 320"]
+      list = ["CSC 305", "CSC 320", "CSC 361"]
     } else if (type === "engr") {
-      list = ["SENG 310", "CSC 361", "MATH 202", "CSC 320"]
+      list = ["ENGR 100", "ENGR 240", "ENGR 280"]
     }
     this.classes = list.map( function (value) {
       return {title: value, icon: false};
