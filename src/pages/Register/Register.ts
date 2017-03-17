@@ -15,18 +15,19 @@ export class Register {
   public icon: boolean;
  // items: Array<{title: string, note: string, icon: string}>;
   classes: Array<{title: string, icon: boolean}>;
+  type: string;
   constructor(public navCtrl: NavController, public modalCtrl: ModalController, public navParams: NavParams, public toastCtrl: ToastController) {
 	// If we navigated to this page, we will have an item available as a nav param
     //this.selectedItem = navParams.get('item');
-    let type = navParams.get('type');
+    this.type = navParams.get('type');
     let list = [];
-    if (type === "find") {
+    if (this.type === "find") {
       list = ["SENG 310", "CSC 361", "MATH 202", "CSC 320"]
-    } else if (type === "recommend") {
+    } else if (this.type === "recommend") {
       list = ["SENG 310", "CSC 361", "MATH 202", "CSC 320"]
-    } else if (type === "csc") {
+    } else if (this.type === "csc") {
       list = ["SENG 310", "CSC 361", "MATH 202", "CSC 320"]
-    } else if (type === "engr") {
+    } else if (this.type === "engr") {
       list = ["SENG 310", "CSC 361", "MATH 202", "CSC 320"]
     }
     this.classes = list.map( function (value) {
