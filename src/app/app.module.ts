@@ -4,9 +4,9 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { Add } from '../pages/add/add';
 import { Info } from '../pages/info/info';
-import { classinfo } from '../pages/classinfo/classinfo';
+import { Classinfo } from '../pages/classinfo/classinfo';
 import { Schedule } from '../pages/schedule/schedule';
-import { Grade } from '../pages/Grade/Grade';
+import { Grade } from '../pages/grade/Grade';
 import { Login } from '../pages/login/login';
 import { Register } from '../pages/Register/Register';
 
@@ -19,7 +19,7 @@ import { Register } from '../pages/Register/Register';
 	  Login,
     Schedule,
     Grade,
-	Register
+	  Register
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -34,7 +34,7 @@ import { Register } from '../pages/Register/Register';
 	  Login,
     Schedule,
     Grade,
-	Register
+	  Register
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

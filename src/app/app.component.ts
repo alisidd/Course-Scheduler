@@ -5,7 +5,7 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 import { Add } from '../pages/add/add';
 import { Login } from '../pages/login/login';
 import { Schedule } from '../pages/schedule/schedule';
-import { Grade } from '../pages/Grade/Grade';
+import { Grade } from '../pages/grade/Grade';
 
 
 @Component({
