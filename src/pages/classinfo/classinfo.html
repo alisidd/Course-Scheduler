@@ -7,16 +7,14 @@
                 <ion-icon name="menu"></ion-icon>
                 </button>
             </ion-col>
-			<ion-col no-padding>
-				<button clear ion-button align="left">
-					Cancel 
-                </button>
-            </ion-col>
-            <ion-col>
+			
+			<ion-col>
                 <ion-title align="center" class="title">
-                SENG 310
+                	SENG:310
                 </ion-title>
             </ion-col>
+			<ion-col></ion-col>
+			<ion-col></ion-col>
         </ion-row>
     </ion-grid>
   </ion-navbar>
@@ -30,10 +28,8 @@
 					<div class="course">SENG 310</div>
 				</ion-col>
 				<ion-col>
-					<button ion-button ion-col icon-right no-padding small color="blue" full clear align="right" outline>
-						<div class="icon_color" item-left>
-							Course Info
-						</div>
+					<button ion-button icon-right small color="blue" full clear align="right" outline style="width: 85px; height:20px; margin-right: 40px; margin-left:auto;">
+						Course Info
 					</button>
 				</ion-col>
 			</ion-row>
@@ -42,30 +38,98 @@
 					<div class="course">George Tzanetakis</div>
 				</ion-col>
 				<ion-col>
-					<button ion-button ion-col icon-right small color="blue" full clear align="right">
-						<div class="icon_color" item-left>
-							Email
-						</div>
+					<button ion-button icon-right small color="blue" full clear align="right" outline style="width: 85px; height:20px; margin-right: 40px; margin-left:auto;">
+						Email
 					</button>
 				</ion-col>
 			</ion-row>
 		</ion-list>
+
 		<div class="course">Upcoming Event</div>
+
 		<ion-list>
 			<ion-row>
-				<ion-col>
+				<ion-thumbnail item-left>
+					<img style="width: 30px;height:30px;" src="assets/green.png">
+				</ion-thumbnail>
+				<ion-col align="center" style="margin-left:auto">
+					<div class="course" item-centre>
+						Assignment 1
+					</div>
+				</ion-col>
+				<ion-col align="right">
+					<div  class="course">Jan 23rd</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-thumbnail item-left> 
+					<img style="width: 30px;height:30px;" src="assets/blue.png">
+				</ion-thumbnail>
+				<!--<div class="course" item-centre ion-col col-2>
+						{{class.title}}
+				</div>-->
+				<ion-col align="center" style="margin-left:auto">
+					<div class="course" item-centre>
+						Project Phase 1
+					</div>
+				</ion-col>
+				<ion-col align="right">
+					<div  class="course">Jan 29rd</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-thumbnail item-left>
+					<img style="width: 30px;height:30px;" src="assets/green.png">
+				</ion-thumbnail>
+				<ion-col align="center" style="margin-left:auto">
+					<div class="course" item-centre>Assignment 2</div>
+				</ion-col>
+				<ion-col align="right">
+					<div  class="course">Feb 13th</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-thumbnail item-left>
+					<img style="width: 30px;height:30px;" src="assets/blue.png">
+				</ion-thumbnail>
+				<ion-col align="center" style="margin-left:40px">
+					<div  class="course">Project Phase 2</div>
+				</ion-col>
+				<ion-col align="right">
+					<div  class="course">Feb 23rd</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-thumbnail item-left>
+					<img style="width: 30px;height:30px;" src="assets/red.png">
+				</ion-thumbnail>
+				<ion-col align="center" style="margin-left:40px">
 					<div  class="course">Midterm 1</div>
 				</ion-col>
 				<ion-col align="right">
 					<div  class="course">Feb 23rd</div>
 				</ion-col>
 			</ion-row>
-				<ion-row>
-				<ion-col>
-					<div  class="course">Project 2</div>
+			<ion-row>
+				<ion-thumbnail item-left>
+					<img style="width: 30px;height:30px;" src="assets/blue.png">
+				</ion-thumbnail>
+				<ion-col align="center" style="margin-left:40px">
+					<div  class="course">Project Phase 1</div>
 				</ion-col>
 				<ion-col align="right">
-					<div  class="course">Feb 23rd</div>
+					<div  class="course">Jan 23rd</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-thumbnail item-left>
+					<img style="width: 30px;height:30px;" src="assets/red.png">
+				</ion-thumbnail>
+				<ion-col align="center" style="margin-left:40px">
+					<div  class="course">Midterm 2</div>
+				</ion-col>
+				<ion-col align="right">
+					<div  class="course">Mar 23rd</div>
 				</ion-col>
 			</ion-row>
 		</ion-list>
