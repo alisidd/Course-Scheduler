@@ -4,7 +4,7 @@ import { Http } from '@angular/http';
 import { NavController, ModalController, ToastController, NavParams, ViewController } from 'ionic-angular';
 import { Info } from '../info/info';
 import { Register } from '../Register/Register';
-import { Classinfo } from '../classinfo/classinfo';
+import { classinfo } from '../classinfo/classinfo';
 
 @Component({
 	selector: 'page-add',
@@ -65,7 +65,7 @@ export class Add {
 	}
 
 	classpage(course){
-		this.navCtrl.push(Classinfo); 
+		this.navCtrl.push(classinfo); 
 	}
 
 }

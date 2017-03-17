@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Schedule } from '../schedule/schedule';
+import {schedule} from '../schedule/schedule';
 
 
 import { NavController, NavParams, ModalController, ToastController, ViewController } from 'ionic-angular';
@@ -36,7 +36,7 @@ loginUser() {
 	const index = this.viewCtrl.index;
     // then we remove it from the navigation stack
     this.navCtrl.popToRoot();
-	this.navCtrl.push(Schedule);
+	this.navCtrl.push(schedule);
 }
 }
 

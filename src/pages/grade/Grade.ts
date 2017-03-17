@@ -4,7 +4,7 @@ import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-Grade',
-  templateUrl: 'grade.html'
+  templateUrl: 'Grade.html'
 })
 export class Grade {
   selectedItem: any;
