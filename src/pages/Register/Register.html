@@ -1,15 +1,15 @@
 <ion-header>
   <ion-navbar>
     <ion-grid>
-        <ion-row>
+        <ion-row align-items-center>
             <ion-col no-padding>
                 <button class="menuBar" ion-button icon-only menuToggle>
                 <ion-icon name="menu"></ion-icon>
                 </button>
             </ion-col>
-            <ion-col>
+            <ion-col no-padding col-8>
                 <ion-title align="center" class="title">
-                Add Courses
+                {{type.toUpperCase()}}
                 </ion-title>
             </ion-col>
             <ion-col no-padding>
@@ -39,7 +39,7 @@
 						{{class.title}}
 					</div>
 
-					<button ion-button icon-right no-padding small color="blue" full clear (click)="itemClicked($event, class);" style="width: 50px; margin-right: -20px; margin-left:auto;">
+					<button ion-button icon-right no-padding small color="blue" full clear (click)="itemClicked($event, class);" style="width: 30px; margin-right: 10px; margin-left:auto;">
 
 						<div class="icon_color" item-left>
 							<ion-icon no-padding item-right class="arrow" name="information-circle"></ion-icon>
